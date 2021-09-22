@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/zipcodeR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/zipcodeR/zipcodeR_{{ version }}.tar.gz
-  sha256: 2da3d4dfef11cc3ff114f203769a24bce6eae66646be7cd0742537457b746008
+  sha256: cab89c9a33f05a8d6f72d5e9aeaf92ef1e02a7d902d62e4c43a2289f66f1e899
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -59,13 +59,10 @@ test:
 about:
   home: https://github.com/gavinrozzi/zipcodeR/, https://www.gavinrozzi.com/project/zipcoder/
   license: GPL-3.0-only
-  summary: Make working with ZIP codes in R painless with an integrated dataset of U.S. ZIP codes
-    and functions for working with them. Search ZIP codes by multiple geographies, including
-    state, county, city & across time zones. Also included are functions for relating
-    ZIP codes to Census data, geocoding & distance calculations.
+  summary: Make working with ZIP codes in R painless with an integrated dataset of U.S. ZIP codes and functions for working with them. Search ZIP codes by multiple geographies, including state, county, city & across time zones. Also included are functions for relating ZIP codes to Census data, geocoding & distance calculations.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
