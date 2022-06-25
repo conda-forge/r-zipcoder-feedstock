@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/zipcodeR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/zipcodeR/zipcodeR_{{ version }}.tar.gz
-  sha256: cab89c9a33f05a8d6f72d5e9aeaf92ef1e02a7d902d62e4c43a2289f66f1e899
+  sha256: b948f39a8460d99b60bc462f79418b58d0ad4ccb898ab78ad83c2c1a381ef24a
 
 build:
   merge_build_host: true  # [win]
