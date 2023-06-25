@@ -1,11 +1,11 @@
-About r-zipcoder
-================
+About r-zipcoder-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-zipcoder-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gavinrozzi/zipcodeR/, https://www.gavinrozzi.com/project/zipcoder/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-zipcoder-feedstock/blob/main/LICENSE.txt)
 
 Summary: Make working with ZIP codes in R painless with an integrated dataset of U.S. ZIP codes and functions for working with them. Search ZIP codes by multiple geographies, including state, county, city & across time zones. Also included are functions for relating ZIP codes to Census data, geocoding & distance calculations.
 
