@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/zipcodeR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/zipcodeR/zipcodeR_{{ version }}.tar.gz
-  sha256: 0a5683f32ec41538b2a8a038a78166cfe157b0af278b2917886d7722da5b4fc8
+  sha256: 60cb1e6ac82914a5e31eadd047de342a81e78f3fd3f6eb94db1f8b9ca5c0e271
 
 build:
   number: 0
